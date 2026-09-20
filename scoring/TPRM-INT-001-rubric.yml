@@ -1,0 +1,23 @@
+id: TPRM-INT-001-rubric
+lab: TPRM-INT-001
+scale: [competent, developing, needs_work, not_applicable]
+criteria:
+  - id: completeness
+    prompt: Three workpapers filled.
+  - id: evidence_usage
+    prompt: Uses the sample payload and ticket, not the anonymous story.
+  - id: risk_identification
+    prompt: Email hash, tenant, EU/DE, product surface, missing DPA.
+  - id: control_mapping
+    prompt: Treats this as vendor intake, not a completed assessment.
+  - id: consistency
+    prompt: Routing matches inherent rating.
+  - id: professional_quality
+    prompt: Note to Sasha is sendable.
+  - id: escalation_judgment
+    prompt: Does not Low-stamp to unblock Procurement.
+  - id: human_gate
+    prompt: User owns the rating. AI is not the classifier of record.
+fail_if:
+  - classifies_low
+  - approves_pixel_or_card

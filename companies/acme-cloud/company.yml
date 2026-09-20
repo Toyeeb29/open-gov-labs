@@ -1,0 +1,24 @@
+id: acme-cloud
+name: Acme Cloud
+industry: saas
+employee_count: 450
+hq_region: global
+stack:
+  - aws
+  - github
+  - okta
+  - jira
+  - slack
+  - postgresql
+frameworks:
+  - soc2
+  - iso27001
+  - nist-csf
+  - gdpr
+sensitive_data:
+  - customer_content
+  - employee_pii
+  - production_credentials_metadata
+notes: >
+  B2B SaaS. First SOC 2 Type II period is in progress.
+  Users should discover gaps; do not file a complete evidence pack.

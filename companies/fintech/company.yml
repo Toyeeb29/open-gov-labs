@@ -1,0 +1,22 @@
+id: fintech
+name: Northline Payments
+industry: fintech
+employee_count: 300
+hq_region: eu
+stack:
+  - aws
+  - kubernetes
+  - github
+  - okta
+  - jira
+frameworks:
+  - soc2
+  - pci-dss
+  - gdpr
+  - dora
+sensitive_data:
+  - payment_metadata
+  - customer_pii
+notes: >
+  Fictional payments company. EU headquartered so GDPR/DORA can appear
+  without making the whole platform US-only.

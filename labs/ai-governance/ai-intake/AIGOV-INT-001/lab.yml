@@ -1,0 +1,65 @@
+id: AIGOV-INT-001
+title: AI system intake — HireAI candidate screening
+domain: ai-governance
+category: ai-intake
+roles:
+  - AI Governance Analyst
+  - GRC Analyst
+seniority:
+  - junior
+  - mid
+company: acme-cloud
+requestor: Priya Shah
+priority: high
+due: 24 September 2026
+simulation_date: 21 September 2026
+frameworks:
+  - id: nist-ai-rmf
+    control_ids: [MAP, GOVERN]
+    notes: Functions only; cite NIST AI RMF 1.0 source in frameworks/catalog.yml
+  - id: iso42001
+    control_ids: []
+    notes: Inventory and impact-assessment themes; no standard text copied
+  - id: eu-ai-act
+    control_ids: []
+    notes: Employment-related biometric/HR context may be in-scope; user must not invent article text
+  - id: gdpr
+    control_ids: [Art.22]
+    notes: Automated decision-making theme if reject mail is automated
+tasks:
+  - complete the intake from what exists and list missing fields
+  - classify the system (user's reasoned tier — not an LLM silent score)
+  - identify people, data, vendors, and human-oversight gaps
+  - draft inventory update
+  - recommend hold / limited pilot / committee — not go-live
+  - write a briefing Priya can take to a human committee
+inputs:
+  - companies/acme-cloud/tickets/PROD-221-hireai-golive.md
+  - companies/acme-cloud/ai-systems/hireai-intake.md
+  - companies/acme-cloud/ai-systems/inventory.yml
+  - companies/acme-cloud/vendors/lumen-models.yml
+  - companies/acme-cloud/privacy/candidate-data-note.md
+  - companies/acme-cloud/policies/POL-AI-001-draft.md
+outputs:
+  - workpapers/01-intake-completion.md
+  - workpapers/02-classification-and-risk.md
+  - workpapers/03-committee-briefing.md
+competencies:
+  - AI intake
+  - AI classification
+  - vendor awareness
+  - stakeholder communication
+  - human-in-the-loop
+estimated_time_minutes: 75
+difficulty: intermediate
+human_gates:
+  - classification and go-live recommendation are human decisions
+  - committee briefing is a request for a decision, not the decision
+constraints:
+  - do not approve production go-live
+  - do not invent an approved AI policy
+  - do not paste or invent EU AI Act article text; cite the catalog URL and describe the issue in your own words
+  - Elena's "not approving" stands until Legal reviews
+rubric: scoring/AIGOV-INT-001-rubric.yml
+portfolio: true
+portfolio_label: Simulated Enterprise Project

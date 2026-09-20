@@ -1,0 +1,59 @@
+# Framework catalog — identifiers and sources only.
+# Do not paste copyrighted control text here.
+
+frameworks:
+  - id: soc2
+    name: SOC 2 Trust Services Criteria
+    publisher: AICPA
+    source_url: https://www.aicpa-cima.com/topic/audit-assurance/audit-and-assurance-greater-than-soc-2
+    jurisdictions: [global]
+  - id: iso27001
+    name: ISO/IEC 27001
+    publisher: ISO
+    source_url: https://www.iso.org/standard/27001
+    jurisdictions: [global]
+  - id: nist-csf
+    name: NIST Cybersecurity Framework
+    publisher: NIST
+    source_url: https://www.nist.gov/cyberframework
+    jurisdictions: [us, global]
+  - id: nist-800-53
+    name: NIST SP 800-53
+    publisher: NIST
+    source_url: https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final
+    jurisdictions: [us]
+  - id: gdpr
+    name: General Data Protection Regulation
+    publisher: European Union
+    source_url: https://eur-lex.europa.eu/eli/reg/2016/679/oj
+    jurisdictions: [eu]
+  - id: hipaa
+    name: HIPAA Security Rule
+    publisher: U.S. HHS
+    source_url: https://www.hhs.gov/hipaa/for-professionals/security/index.html
+    jurisdictions: [us]
+  - id: pci-dss
+    name: PCI DSS
+    publisher: PCI SSC
+    source_url: https://www.pcisecuritystandards.org/
+    jurisdictions: [global]
+  - id: nist-ai-rmf
+    name: NIST AI Risk Management Framework
+    publisher: NIST
+    source_url: https://www.nist.gov/itl/ai-risk-management-framework
+    jurisdictions: [us, global]
+  - id: iso42001
+    name: ISO/IEC 42001
+    publisher: ISO
+    source_url: https://www.iso.org/standard/81230.html
+    jurisdictions: [global]
+  - id: eu-ai-act
+    name: EU AI Act
+    publisher: European Union
+    source_url: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+    jurisdictions: [eu]
+  - id: dora
+    name: Digital Operational Resilience Act
+    publisher: European Union
+    source_url: https://eur-lex.europa.eu/eli/reg/2022/2554/oj
+    jurisdictions: [eu]

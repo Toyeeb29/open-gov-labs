@@ -1,0 +1,48 @@
+id: GRCENG-EVD-001
+title: Automated evidence collection — privileged access vs leavers
+domain: grc-engineering
+category: evidence-automation
+roles:
+  - GRC Engineer
+  - GRC Analyst
+seniority:
+  - junior
+  - mid
+company: acme-cloud
+requestor: Priya Shah
+priority: medium
+due: 30 September 2026
+simulation_date: 21 September 2026
+frameworks:
+  - id: soc2
+    control_ids: [CC6.1]
+  - id: nist-csf
+    control_ids: [PR.AA-05]
+tasks:
+  - state the governance problem
+  - run the collector against fixtures
+  - interpret exceptions
+  - document what must stay human
+inputs:
+  - companies/acme-cloud/tickets/ENG-GRC-041-evidence-pipeline.md
+  - datasets/evidence-fixtures/
+  - automation/evidence_collect/collect.py
+  - companies/acme-cloud/controls/CTL-IAM-01.yml
+outputs:
+  - workpapers/01-governance-and-design.md
+  - workpapers/02-run-results.md
+competencies:
+  - evidence automation
+  - control mapping
+  - human-in-the-loop
+estimated_time_minutes: 60
+difficulty: intermediate
+human_gates:
+  - collector must not revoke access
+  - operating effectiveness remains a person
+constraints:
+  - do not point the script at a live Okta
+  - do not treat exceptions.json as an approved revocation
+rubric: scoring/GRCENG-EVD-001-rubric.yml
+portfolio: true
+portfolio_label: Simulated Enterprise Project

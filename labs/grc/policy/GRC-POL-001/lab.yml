@@ -1,0 +1,59 @@
+id: GRC-POL-001
+title: Policy exception — contractor MFA bypass on production bastion
+domain: grc
+category: policy
+roles:
+  - GRC Analyst
+  - Security Compliance Analyst
+seniority:
+  - junior
+  - mid
+company: acme-cloud
+requestor: Priya Shah, Manager, Security & Compliance
+priority: high
+due: 21 September 2026
+simulation_date: 21 September 2026
+frameworks:
+  - id: soc2
+    control_ids: [CC6.1, CC2.2]
+    notes: Access and policy communication themes. Cite catalog. Do not paste TSC text.
+  - id: iso27001
+    control_ids: [A.5.1, A.8.2]
+  - id: nist-csf
+    control_ids: [PR.AA-01]
+tasks:
+  - read the exception request and the access policy
+  - notice the exception procedure is still draft
+  - determine whether the bypass already happened
+  - recommend deny, or a time-boxed exception with named approvers and compensating controls
+  - do not treat Slack or Noah's comment as the logged exception
+inputs:
+  - companies/acme-cloud/tickets/POL-EXC-019-contractor-mfa.md
+  - companies/acme-cloud/policies/POL-ACCESS-001-access-control.md
+  - companies/acme-cloud/policies/POL-EXC-001-exceptions-draft.md
+  - companies/acme-cloud/security/slack-notes-reese.md
+  - companies/acme-cloud/security/slack-notes-identity.md
+  - companies/acme-cloud/contracts/reese-dalton-sow.md
+  - companies/acme-cloud/org/people.yml
+outputs:
+  - workpapers/01-exception-analysis.md
+  - workpapers/02-recommendation.md
+  - workpapers/03-stakeholder-note.md
+competencies:
+  - policy review
+  - exception management
+  - escalation judgment
+  - stakeholder communication
+estimated_time_minutes: 60
+difficulty: intermediate
+human_gates:
+  - exception decision is a named person (CISO / manager), not GRC rubber-stamping Slack
+  - Jordan may recommend, not approve High residual access exceptions
+constraints:
+  - do not approve an open-ended MFA bypass
+  - do not invent an approved exception procedure
+  - do not leave Reese as undocumented prod admin
+  - cite file paths
+rubric: scoring/GRC-POL-001-rubric.yml
+portfolio: true
+portfolio_label: Simulated Enterprise Project

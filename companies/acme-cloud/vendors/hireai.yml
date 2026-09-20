@@ -1,0 +1,8 @@
+id: VND-021
+name: HireAI, Inc.
+status: proposed
+product: Candidate ranking connected to careers page
+model_subprocessor: Lumen Models Ltd.
+contract: none on file
+security_pack: marketing trust page only (not in this repo)
+notes: See ai-systems/hireai-intake.md and tickets/PROD-221-hireai-golive.md.

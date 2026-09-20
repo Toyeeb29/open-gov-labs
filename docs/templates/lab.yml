@@ -1,0 +1,52 @@
+# Copy this file to labs/<domain>/<category>/<id>/lab.yml
+id: GRC-COMP-001
+title: SOC 2 evidence collection — CC6.1
+domain: grc
+category: compliance
+roles:
+  - GRC Analyst
+  - Security Compliance Analyst
+seniority:
+  - junior
+  - mid
+company: acme-cloud
+requestor: Manager, Security & Compliance
+priority: high
+due: end of week
+frameworks:
+  - id: soc2
+    control_ids: [CC6.1]
+  - id: iso27001
+    control_ids: []
+  - id: nist-csf
+    control_ids: []
+tasks:
+  - review available evidence
+  - determine whether the control is operating
+  - identify evidence gaps
+  - request missing evidence
+  - document findings
+  - prepare an audit-ready summary
+inputs:
+  - Access Control Policy
+  - latest access review export
+  - Okta / IdP screenshots
+  - related Jira tickets
+outputs:
+  - control assessment
+  - evidence request
+  - audit-ready summary
+competencies:
+  - evidence analysis
+  - control assessment
+  - stakeholder communication
+  - audit support
+estimated_time_minutes: 90
+difficulty: intermediate
+human_gates:
+  - effectiveness conclusion is made by the user, not an AI summary
+constraints:
+  - do not invent evidence that is not in the company files
+  - do not grant or recommend production access in this lab
+rubric: scoring/default-rubric.yml
+portfolio: true

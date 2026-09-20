@@ -1,0 +1,14 @@
+id: VND-023
+name: PixelNorth Labs LLC
+status: intake
+requested_by: Sasha Klein
+systems_requested:
+  - app.acmecloud logged-in product (not listed as a separate SYS id)
+data_classes_claimed_by_requestor: anonymized_analytics
+data_classes_actual: not_set
+inherent_risk_draft: not_set
+security_contact: null
+dpa: none_on_file
+notes: >
+  No completed intake. No SOC. No questionnaire.
+  Growth has a trial key in a Slack DM (not exported).

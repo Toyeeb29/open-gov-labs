@@ -1,0 +1,62 @@
+id: TPRM-VEND-001
+title: Vendor security assessment — DataBridge production Snowflake access
+domain: tprm
+category: vendor-assessment
+roles:
+  - TPRM Analyst
+  - GRC Analyst
+  - Security Compliance Analyst
+seniority:
+  - junior
+  - mid
+company: acme-cloud
+requestor: Priya Shah (covering for Keiko Watanabe)
+priority: high
+due: 22 September 2026
+simulation_date: 21 September 2026
+frameworks:
+  - id: soc2
+    control_ids: [CC9.2]
+    notes: Vendor risk monitoring theme; cite catalog, do not paste TSC text.
+  - id: iso27001
+    control_ids: [A.5.19, A.5.20, A.5.23]
+  - id: gdpr
+    control_ids: [Art.28]
+    notes: Processor terms if production personal data is shared.
+tasks:
+  - classify the vendor and the data actually requested
+  - review questionnaire, SOC cover sheet, and draft order form
+  - identify contradictions
+  - record inherent and residual risk
+  - recommend treatment (approve / approve with conditions / deny / hold)
+  - write remediation and monitoring next steps
+  - leave access unapproved until a named human records the decision
+inputs:
+  - companies/acme-cloud/tickets/PROC-088-databridge-prod-access.md
+  - companies/acme-cloud/vendors/databridge.yml
+  - companies/acme-cloud/vendors/databridge-questionnaire.md
+  - companies/acme-cloud/evidence/EVD-databridge-soc2-cover.md
+  - companies/acme-cloud/contracts/databridge-order-form-excerpt.md
+  - companies/acme-cloud/assets/systems.yml
+outputs:
+  - workpapers/01-vendor-classification.md
+  - workpapers/02-vendor-security-assessment.md
+  - workpapers/03-decision-and-remediation.md
+competencies:
+  - risk assessment
+  - evidence analysis
+  - control assessment
+  - stakeholder communication
+  - human-in-the-loop
+estimated_time_minutes: 90
+difficulty: intermediate
+human_gates:
+  - residual risk and access decision are made by the user
+  - AI may list issues; AI may not approve the Snowflake share
+constraints:
+  - do not approve production access in the ticket
+  - do not invent a Type II report or signed DPA
+  - cite file paths
+rubric: scoring/TPRM-VEND-001-rubric.yml
+portfolio: true
+portfolio_label: Simulated Enterprise Project

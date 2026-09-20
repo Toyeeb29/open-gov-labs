@@ -1,0 +1,24 @@
+id: default-artifact-rubric
+applies_to: most-labs
+scale:
+  - competent
+  - developing
+  - needs_work
+  - not_applicable
+criteria:
+  - id: completeness
+    prompt: Are required outputs present?
+  - id: evidence_usage
+    prompt: Did the user cite evidence that exists in the company or datasets?
+  - id: risk_identification
+    prompt: Did they notice the material issues a practitioner should catch?
+  - id: control_mapping
+    prompt: Are framework and control references accurate?
+  - id: consistency
+    prompt: Do the artifacts agree with each other?
+  - id: professional_quality
+    prompt: Would a manager send this to a stakeholder?
+  - id: escalation_judgment
+    prompt: Did they escalate or hold for defensible reasons?
+  - id: human_gate
+    prompt: Did they keep AI or automation from acting as approval?

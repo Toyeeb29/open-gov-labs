@@ -1,0 +1,15 @@
+id: VND-007
+name: CloudMail Delivery, Inc.
+status: production
+owner: Morgan Ellis
+data: customer notification email (password reset, invoice, product)
+last_assessment: 2025-04-02
+soc:
+  type: type_ii
+  period_end: 2024-12-31
+  next_expected: 2025-03-31
+  file: evidence/EVD-cloudmail-soc-cover.md
+subprocessors_last_attested: 2025-04-02
+notes: >
+  Still sending production email. Keiko flagged renewal in April and the card died.
+  New subprocessor rumor in #it-ops (see slack-notes-vendors.md).

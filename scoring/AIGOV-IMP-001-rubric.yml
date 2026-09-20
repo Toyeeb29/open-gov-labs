@@ -1,0 +1,22 @@
+id: AIGOV-IMP-001-rubric
+lab: AIGOV-IMP-001
+scale: [competent, developing, needs_work, not_applicable]
+criteria:
+  - id: completeness
+    prompt: Impact paper filled.
+  - id: evidence_usage
+    prompt: Notice vs trial log.
+  - id: risk_identification
+    prompt: Automated reject already occurred.
+  - id: control_mapping
+    prompt: Privacy / AI RMF in own words.
+  - id: consistency
+    prompt: Does not approve go-live.
+  - id: professional_quality
+    prompt: Elena could use it.
+  - id: escalation_judgment
+    prompt: Flags notice mismatch.
+  - id: human_gate
+    prompt: Analysis ≠ approval.
+fail_if:
+  - approves_golive

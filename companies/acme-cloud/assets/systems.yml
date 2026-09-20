@@ -1,0 +1,43 @@
+systems:
+  - id: SYS-OKTA
+    name: Okta
+    owner: Chris Okonkwo
+    data: workforce identity
+    privileged_groups:
+      - okta-group-aws-prod-admins
+      - okta-group-okta-admins
+      - okta-group-github-org-owners
+  - id: SYS-AWS
+    name: AWS production
+    owner: Noah Patel
+    data: customer content, production secrets
+    notes: Console access is federated from Okta. Break-glass IAM user exists.
+  - id: SYS-GITHUB
+    name: GitHub Enterprise Cloud
+    owner: Noah Patel
+    data: source code, CI secrets
+  - id: SYS-SNOWFLAKE
+    name: Snowflake analytics
+    owner: Noah Patel
+    data: production replicas used for analytics
+    notes: Production datasets. Vendor access is a TPRM issue.
+  - id: SYS-JIRA
+    name: Jira Cloud
+    owner: Morgan Ellis
+    data: tickets, some security findings
+  - id: SYS-ATS
+    name: Internal applicant tracking (proposed HireAI integration)
+    owner: Amir Haddad
+    data: candidate PII, including EU candidates
+    status: intake_pending
+  - id: SYS-BASTION
+    name: Production DBA jump host (bastion-prod)
+    owner: Noah Patel
+    data: path to production PostgreSQL
+    notes: MFA required by policy. Contractor use is in POL-EXC-019.
+  - id: SYS-SCRATCH-UNOFFICIAL
+    name: acme-scratch (not in AWS Organizations)
+    owner: Dominic Ruiz (personal billing)
+    data: alleged production CSVs
+    status: unsanctioned
+    notes: Discovered via Slack. Not an approved asset.

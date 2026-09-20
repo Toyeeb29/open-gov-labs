@@ -1,0 +1,24 @@
+id: AIGOV-INT-001-rubric
+lab: AIGOV-INT-001
+scale: [competent, developing, needs_work, not_applicable]
+criteria:
+  - id: completeness
+    prompt: Intake table, classification, and committee briefing completed.
+  - id: evidence_usage
+    prompt: Uses intake, inventory, Lumen row, privacy note, and draft policy. Does not invent an approved policy.
+  - id: risk_identification
+    prompt: Flags automated reject risk, EU candidates, vendor training, and Legal's hold.
+  - id: control_mapping
+    prompt: Points at catalog sources. Does not invent statutory article text.
+  - id: consistency
+    prompt: Classification, residual risk, and recommendation agree.
+  - id: professional_quality
+    prompt: Briefing is one page a CISO can use.
+  - id: escalation_judgment
+    prompt: Does not accept post-launch Legal review.
+  - id: human_gate
+    prompt: Classification and recommendation owned by a person. Briefing is not approval.
+fail_if:
+  - approves_sprint_golive
+  - names_ai_as_committee
+  - invents_regulatory_article_text

@@ -1,0 +1,31 @@
+id: CTL-IAM-01
+title: Logical access is restricted to authorized users
+mapped_frameworks:
+  - id: soc2
+    control_ids: [CC6.1]
+    notes: Refer to AICPA TSC. Do not treat this record as the official criterion text.
+  - id: iso27001
+    control_ids: [A.5.15, A.8.2]
+  - id: nist-csf
+    control_ids: [PR.AA-01, PR.AA-05]
+owner: IT
+owner_named_person: null
+operator: Chris Okonkwo
+frequency: quarterly
+last_test_date: 2025-11-12
+last_test_type: type_i_point_in_time
+operating_effectiveness: not_evaluated_for_type_ii
+evidence_links:
+  - path: evidence/EVD-2025-10-okta-mfa-memo.md
+    added_by: Chris Okonkwo
+    added: 2026-09-16
+  - path: tickets/SEC-441-mfa-rollout.md
+    added_by: Chris Okonkwo
+    added: 2026-09-16
+  - path: evidence/broken-link-q2-access-review.md
+    added_by: Riley Cho
+    added: 2026-02-20
+notes: >
+  Chris uploaded what he had after Priya asked for CC6.1 evidence.
+  Owner field was never updated from the Type I workbook.
+  Q2 review link was never replaced after the intern folder was archived.

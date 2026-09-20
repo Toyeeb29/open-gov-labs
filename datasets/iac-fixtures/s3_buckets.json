@@ -1,0 +1,21 @@
+{
+  "source": "simulated terraform show -json extract",
+  "buckets": [
+    {
+      "name": "acme-prod-app-logs",
+      "encryption": "AES256",
+      "public": false
+    },
+    {
+      "name": "acme-scratch-qbr",
+      "encryption": null,
+      "public": true,
+      "notes": "Dominic's unsanctioned copy target"
+    },
+    {
+      "name": "acme-artifacts-ci",
+      "encryption": "AES256",
+      "public": false
+    }
+  ]
+}

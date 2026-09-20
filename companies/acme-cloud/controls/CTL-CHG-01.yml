@@ -1,0 +1,27 @@
+id: CTL-CHG-01
+title: Production changes are authorized, reviewed, and recorded
+mapped_frameworks:
+  - id: soc2
+    control_ids: [CC8.1]
+    notes: Change management theme. Cite catalog. Do not paste TSC text.
+  - id: iso27001
+    control_ids: [A.8.32]
+  - id: nist-csf
+    control_ids: [PR.IP-01]
+owner: Engineering
+owner_named_person: Luis Mora
+operator: Noah Patel
+frequency: continuous / sampled quarterly
+last_test_date: 2025-11-12
+last_test_type: type_i_inquiry_only
+operating_effectiveness: not_evaluated_for_type_ii
+evidence_links:
+  - path: evidence/EVD-2026-09-deploy-sample.md
+    added_by: Noah Patel
+    added: 2026-09-18
+  - path: tickets/CHG-880-hotfix-no-review.md
+    added_by: Noah Patel
+    added: 2026-09-18
+notes: >
+  Noah uploaded a GitHub export after Priya asked for a CC8.1 sample.
+  He said weekend deploys "might not be tagged." Type I test was a walkthrough, no sample.

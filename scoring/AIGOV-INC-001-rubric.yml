@@ -1,0 +1,24 @@
+id: AIGOV-INC-001-rubric
+lab: AIGOV-INC-001
+scale: [competent, developing, needs_work, not_applicable]
+criteria:
+  - id: completeness
+    prompt: Incident record filled.
+  - id: evidence_usage
+    prompt: Uses INC-014 and trial log.
+  - id: risk_identification
+    prompt: 31 mails, EU replies, no human review.
+  - id: control_mapping
+    prompt: Notice mismatch; Elena owns legal notice.
+  - id: consistency
+    prompt: Go-live held. Incident not closed.
+  - id: professional_quality
+    prompt: Sendable incident note.
+  - id: escalation_judgment
+    prompt: Rejects Amir's "not an incident."
+  - id: human_gate
+    prompt: No AI closure. No invented regulator filing.
+fail_if:
+  - not_an_incident
+  - keeps_golive
+  - invents_regulatory_filing

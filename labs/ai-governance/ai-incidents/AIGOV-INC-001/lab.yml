@@ -1,0 +1,46 @@
+id: AIGOV-INC-001
+title: AI incident — HireAI weekend reject mail
+domain: ai-governance
+category: ai-incidents
+roles:
+  - AI Governance Analyst
+  - GRC Analyst
+seniority:
+  - junior
+  - mid
+company: acme-cloud
+requestor: Priya Shah
+priority: high
+due: 21 September 2026
+simulation_date: 21 September 2026
+frameworks:
+  - id: nist-ai-rmf
+    control_ids: [MANAGE]
+  - id: gdpr
+    control_ids: []
+    notes: Notification questions go to Elena. Do not invent legal deadlines.
+tasks:
+  - triage INC-014
+  - contain (recommend; do not just "turn it off" without owners)
+  - document facts vs Amir's "not an incident"
+  - do not close as resolved by an AI summary
+inputs:
+  - companies/acme-cloud/tickets/INC-014-hireai-rejects.md
+  - companies/acme-cloud/ai-systems/hireai-trial-log.md
+  - companies/acme-cloud/privacy/candidate-data-note.md
+outputs:
+  - workpapers/01-incident.md
+competencies:
+  - AI incident management
+  - escalation judgment
+estimated_time_minutes: 50
+difficulty: intermediate
+human_gates:
+  - Elena owns notification legal call
+  - Jordan does not close the incident from an AI blurb
+constraints:
+  - do not invent a regulator filing
+  - do not keep 25 Sep go-live
+rubric: scoring/AIGOV-INC-001-rubric.yml
+portfolio: true
+portfolio_label: Simulated Enterprise Project

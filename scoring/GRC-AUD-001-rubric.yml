@@ -1,0 +1,26 @@
+id: GRC-AUD-001-rubric
+lab: GRC-AUD-001
+scale: [competent, developing, needs_work, not_applicable]
+criteria:
+  - id: completeness
+    prompt: Three workpapers filled (test, exceptions, conclusion).
+  - id: evidence_usage
+    prompt: Inspected the sample, CHG tickets, and CloudTrail note. Did not rely on inquiry alone.
+  - id: risk_identification
+    prompt: >
+      Flags incomplete population, self-review / missing reviewers,
+      after-the-fact hotfix, and the CloudTrail disable.
+  - id: control_mapping
+    prompt: Maps to CTL-CHG-01 / CC8.1 and POL-CHG-001 clauses.
+  - id: consistency
+    prompt: Exceptions and effectiveness rating match.
+  - id: professional_quality
+    prompt: Workpaper a manager could put in the audit file after a light edit.
+  - id: escalation_judgment
+    prompt: Treats logging disable as a finding, not paperwork. Does not accept CHG-881.
+  - id: human_gate
+    prompt: Tester is named. After-the-fact tickets are not treated as the control operating.
+fail_if:
+  - concludes_effective
+  - treats_after_the_fact_tickets_as_operating_evidence
+  - invents_complete_population

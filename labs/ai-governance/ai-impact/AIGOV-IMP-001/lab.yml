@@ -1,0 +1,43 @@
+id: AIGOV-IMP-001
+title: AI impact assessment — HireAI on applicants
+domain: ai-governance
+category: ai-impact
+roles:
+  - AI Governance Analyst
+  - Privacy Analyst
+seniority:
+  - mid
+company: acme-cloud
+requestor: Elena Voss / Priya Shah
+priority: medium
+due: 26 September 2026
+simulation_date: 21 September 2026
+frameworks:
+  - id: gdpr
+    control_ids: [Art.22]
+  - id: nist-ai-rmf
+    control_ids: [MAP]
+  - id: iso42001
+    control_ids: []
+tasks:
+  - document who is affected and how
+  - compare to the careers privacy notice
+  - separate impact analysis from approval
+inputs:
+  - companies/acme-cloud/privacy/candidate-data-note.md
+  - companies/acme-cloud/ai-systems/hireai-intake.md
+  - companies/acme-cloud/ai-systems/hireai-trial-log.md
+outputs:
+  - workpapers/01-impact.md
+competencies:
+  - AI impact assessment
+  - privacy
+estimated_time_minutes: 60
+difficulty: intermediate
+human_gates:
+  - impact note is not go-live approval
+constraints:
+  - do not invent notice language Elena did not write
+rubric: scoring/AIGOV-IMP-001-rubric.yml
+portfolio: true
+portfolio_label: Simulated Enterprise Project

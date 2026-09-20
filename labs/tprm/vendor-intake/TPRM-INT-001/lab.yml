@@ -1,0 +1,55 @@
+id: TPRM-INT-001
+title: Vendor intake — PixelNorth product pixel
+domain: tprm
+category: vendor-intake
+roles:
+  - TPRM Analyst
+  - GRC Analyst
+seniority:
+  - junior
+  - mid
+company: acme-cloud
+requestor: Priya Shah (covering for Keiko Watanabe)
+priority: medium
+due: 26 September 2026
+simulation_date: 21 September 2026
+frameworks:
+  - id: soc2
+    control_ids: [CC9.2]
+  - id: iso27001
+    control_ids: [A.5.19]
+  - id: gdpr
+    control_ids: []
+    notes: Pixel may process EU tenant identifiers. Cite catalog. Do not invent article text.
+tasks:
+  - complete intake from files, list missing fields
+  - classify inherent risk from the sample payload, not the sales story
+  - route next step (questionnaire / hold / reject)
+  - do not issue a Low stamp so Procurement can buy
+inputs:
+  - companies/acme-cloud/tickets/MKT-104-pixelnorth.md
+  - companies/acme-cloud/vendors/pixelnorth.yml
+  - companies/acme-cloud/vendors/pixelnorth-sample-payload.md
+  - companies/acme-cloud/security/slack-notes-vendors.md
+  - companies/acme-cloud/privacy/candidate-data-note.md
+outputs:
+  - workpapers/01-intake.md
+  - workpapers/02-inherent-classification.md
+  - workpapers/03-routing.md
+competencies:
+  - vendor intake
+  - data classification
+  - stakeholder communication
+  - human-in-the-loop
+estimated_time_minutes: 60
+difficulty: intro
+human_gates:
+  - inherent risk is set by the user
+  - Low classification is not issued to unblock a card
+constraints:
+  - do not approve the pixel on app.acmecloud
+  - do not treat email hash + tenant + DE as anonymous
+  - cite file paths
+rubric: scoring/TPRM-INT-001-rubric.yml
+portfolio: true
+portfolio_label: Simulated Enterprise Project

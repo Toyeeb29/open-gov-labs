@@ -1,0 +1,42 @@
+id: AIGOV-VND-001
+title: AI vendor assessment — Lumen Models via HireAI
+domain: ai-governance
+category: ai-vendor-risk
+roles:
+  - AI Governance Analyst
+  - TPRM Analyst
+seniority:
+  - junior
+  - mid
+company: acme-cloud
+requestor: Priya Shah
+priority: medium
+due: 26 September 2026
+simulation_date: 21 September 2026
+frameworks:
+  - id: iso27001
+    control_ids: [A.5.19, A.5.23]
+  - id: nist-ai-rmf
+    control_ids: [GOVERN, MAP]
+tasks:
+  - separate HireAI (contracted) from Lumen (model)
+  - review training-data and region claims
+  - recommend hold conditions
+inputs:
+  - companies/acme-cloud/vendors/lumen-models.yml
+  - companies/acme-cloud/vendors/hireai.yml
+  - companies/acme-cloud/ai-systems/hireai-intake.md
+outputs:
+  - workpapers/01-ai-vendor.md
+competencies:
+  - AI vendor risk
+  - TPRM
+estimated_time_minutes: 50
+difficulty: intermediate
+human_gates:
+  - no vendor approval by AI
+constraints:
+  - do not invent a Lumen contract or no-train add-on
+rubric: scoring/AIGOV-VND-001-rubric.yml
+portfolio: true
+portfolio_label: Simulated Enterprise Project

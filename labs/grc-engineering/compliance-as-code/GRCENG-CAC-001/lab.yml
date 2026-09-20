@@ -1,0 +1,45 @@
+id: GRCENG-CAC-001
+title: Compliance-as-code — deny public unencrypted S3
+domain: grc-engineering
+category: compliance-as-code
+roles:
+  - GRC Engineer
+seniority:
+  - junior
+  - mid
+company: acme-cloud
+requestor: Priya Shah
+priority: medium
+due: 30 September 2026
+simulation_date: 21 September 2026
+frameworks:
+  - id: soc2
+    control_ids: [CC6.1, CC6.7]
+  - id: nist-csf
+    control_ids: [PR.DS-01]
+tasks:
+  - map the RSK-024 bucket problem to a CI policy
+  - inspect the Rego and the fixture
+  - record which buckets fail and why a failing gate can be success
+  - state what Rego cannot decide
+inputs:
+  - companies/acme-cloud/tickets/ENG-GRC-042-s3-rego.md
+  - automation/policies/s3_encryption.rego
+  - datasets/iac-fixtures/s3_buckets.json
+  - companies/acme-cloud/tickets/RSK-024-prod-clone.md
+outputs:
+  - workpapers/01-policy-review.md
+competencies:
+  - compliance-as-code
+  - control mapping
+  - human-in-the-loop
+estimated_time_minutes: 45
+difficulty: intermediate
+human_gates:
+  - a green policy does not mean the scratch copy is accepted
+constraints:
+  - do not apply to live AWS
+  - do not invent additional ISO clause text
+rubric: scoring/GRCENG-CAC-001-rubric.yml
+portfolio: true
+portfolio_label: Simulated Enterprise Project

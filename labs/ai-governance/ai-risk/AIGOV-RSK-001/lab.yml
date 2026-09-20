@@ -1,0 +1,52 @@
+id: AIGOV-RSK-001
+title: AI risk assessment — HireAI ranking and reject mail
+domain: ai-governance
+category: ai-risk
+roles:
+  - AI Governance Analyst
+  - GRC Analyst
+seniority:
+  - junior
+  - mid
+company: acme-cloud
+requestor: Priya Shah
+priority: high
+due: 24 September 2026
+simulation_date: 21 September 2026
+frameworks:
+  - id: nist-ai-rmf
+    control_ids: [MAP, MEASURE]
+  - id: iso42001
+    control_ids: []
+  - id: eu-ai-act
+    control_ids: []
+    notes: Employment context. Cite catalog URL. Do not invent article text.
+  - id: gdpr
+    control_ids: [Art.22]
+    notes: Theme only if automated reject mail is in play.
+tasks:
+  - assess HireAI risk from files, not from Amir's narrative
+  - assign a human rating with published reasoning
+  - list control gaps and evidence still missing
+inputs:
+  - companies/acme-cloud/ai-systems/hireai-intake.md
+  - companies/acme-cloud/ai-systems/inventory.yml
+  - companies/acme-cloud/ai-systems/hireai-trial-log.md
+  - companies/acme-cloud/tickets/PROD-221-hireai-golive.md
+  - companies/acme-cloud/privacy/candidate-data-note.md
+  - companies/acme-cloud/policies/POL-AI-001-draft.md
+outputs:
+  - workpapers/01-ai-risk-assessment.md
+competencies:
+  - AI risk assessment
+  - human-in-the-loop
+estimated_time_minutes: 70
+difficulty: intermediate
+human_gates:
+  - official risk rating is the user's, not an LLM score
+constraints:
+  - do not invent a numeric model that is not in the repo
+  - do not approve go-live
+rubric: scoring/AIGOV-RSK-001-rubric.yml
+portfolio: true
+portfolio_label: Simulated Enterprise Project

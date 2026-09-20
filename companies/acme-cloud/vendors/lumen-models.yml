@@ -1,0 +1,10 @@
+id: VND-022
+name: Lumen Models Ltd.
+status: used_by_proposed_system
+product: Lumen Embed / chat API
+region: processing in EU and US (vendor FAQ, not contractually fixed)
+data_use_claims:
+  - "may use inputs to improve models unless the customer buys the enterprise no-train add-on"
+notes: >
+  HireAI's architecture diagram lists Lumen as the model provider.
+  Acme Cloud has no contract with Lumen. HireAI is the contracting party.

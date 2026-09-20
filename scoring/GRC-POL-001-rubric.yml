@@ -1,0 +1,26 @@
+id: GRC-POL-001-rubric
+lab: GRC-POL-001
+scale: [competent, developing, needs_work, not_applicable]
+criteria:
+  - id: completeness
+    prompt: Three workpapers filled (analysis, recommendation, stakeholder notes).
+  - id: evidence_usage
+    prompt: Uses policy, draft procedure, Slack, SOW. Notes the bypass already happened.
+  - id: risk_identification
+    prompt: >
+      Open-ended duration, contractor prod-admin, HelioFix pattern,
+      and Slack-as-approval are identified.
+  - id: control_mapping
+    prompt: Maps to POL-ACCESS-001 MFA/exception clauses. States POL-EXC-001 is not approved.
+  - id: consistency
+    prompt: Recommendation and Chris's same-day actions match the residual rating.
+  - id: professional_quality
+    prompt: Notes are sendable. No rubber stamp.
+  - id: escalation_judgment
+    prompt: Does not leave an undocumented MFA hole overnight. CISO owns High residual if anyone accepts.
+  - id: human_gate
+    prompt: Jordan recommends only. AI / Noah Slack is not the exception log.
+fail_if:
+  - approves_open_ended_mfa_bypass
+  - treats_slack_as_logged_exception
+  - invents_approved_exception_procedure

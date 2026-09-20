@@ -1,0 +1,23 @@
+{
+  "exported_at": "2026-09-12T09:14:00Z",
+  "source": "simulated Okta group export — not a live tenant",
+  "groups": [
+    {
+      "name": "okta-group-aws-prod-admins",
+      "members": [
+        {"email": "noah.patel@acmecloud.example", "status": "ACTIVE", "last_login": "2026-09-11"},
+        {"email": "maya.chen@acmecloud.example", "status": "ACTIVE", "last_login": "2026-08-02"},
+        {"email": "dominic.ruiz@acmecloud.example", "status": "ACTIVE", "last_login": "2026-09-11"},
+        {"email": "priya.shah@acmecloud.example", "status": "ACTIVE", "last_login": "2026-09-10"},
+        {"email": "reese.dalton@nightingale.example", "status": "ACTIVE", "last_login": "2026-09-21"}
+      ]
+    },
+    {
+      "name": "okta-group-okta-admins",
+      "members": [
+        {"email": "chris.okonkwo@acmecloud.example", "status": "ACTIVE", "last_login": "2026-09-12"},
+        {"email": "riley.cho@acmecloud.example", "status": "ACTIVE", "last_login": "2026-04-28"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+id: GRCENG-CLD-001-rubric
+lab: GRCENG-CLD-001
+scale: [competent, developing, needs_work, not_applicable]
+criteria:
+  - id: completeness
+    prompt: Findings table filled for all three repos.
+  - id: evidence_usage
+    prompt: Uses the fixture or check.py output.
+  - id: risk_identification
+    prompt: infra, scripts-hotfixes, and admin bypass on app-api.
+  - id: control_mapping
+    prompt: CTL-CHG-01 / POL-CHG-001.
+  - id: consistency
+    prompt: Severity matches gaps.
+  - id: professional_quality
+    prompt: Sendable to Noah.
+  - id: escalation_judgment
+    prompt: Does not silently lock GitHub.
+  - id: human_gate
+    prompt: Monitor ≠ change freeze.
+fail_if:
+  - ignores_infra_or_hotfixes_repo

@@ -1,0 +1,18 @@
+id: VND-014
+name: DataBridge Analytics, Inc.
+status: requested_production_access
+requested_by: Amir Haddad
+sponsor: Luis Mora
+systems_requested:
+  - SYS-SNOWFLAKE
+data_classes_claimed_by_vendor:
+  - aggregated usage metrics
+data_classes_actual:
+  - production customer content (Snowflake replica)
+  - user identifiers
+inherent_risk_draft: not_set
+residual_risk: not_set
+security_contact: casey.nguyen@databridge.example
+notes: >
+  Vendor is already in Slack #growth-analytics as a guest.
+  No completed TPRM record. Questionnaire returned 11 Sep 2026.

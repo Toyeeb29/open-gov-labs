@@ -1,0 +1,17 @@
+# AI inventory — incomplete on purpose
+systems:
+  - id: AIS-001
+    name: SupportReply draft assistant
+    owner: Customer Support
+    status: production
+    data: customer ticket text
+    human_oversight: agent sends every reply
+    notes: Inventory row exists; no current lab.
+  - id: AIS-004
+    name: HireAI screening
+    owner: Amir Haddad
+    status: intake_incomplete
+    data: candidate CVs, names, email, work history; EU and US candidates
+    model_vendor: Lumen Models Ltd. (via HireAI)
+    human_oversight: not specified
+    go_live_requested: 2026-09-25

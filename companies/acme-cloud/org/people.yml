@@ -1,0 +1,156 @@
+# Fictional workforce. Emails use .example and are not real accounts.
+people:
+  - id: P-001
+    name: Alex Kim
+    title: CISO
+    team: Security
+    manager: null
+    status: active
+    start: 2023-04-01
+  - id: P-002
+    name: Priya Shah
+    title: Manager, Security & Compliance
+    team: Security & Compliance
+    manager: P-001
+    status: active
+    start: 2024-01-15
+    email: priya.shah@acmecloud.example
+  - id: P-003
+    name: Jordan Hale
+    title: GRC Analyst
+    team: Security & Compliance
+    manager: P-002
+    status: active
+    start: 2026-06-02
+    email: jordan.hale@acmecloud.example
+    notes: You. Hired to help with the first Type II.
+  - id: P-004
+    name: Chris Okonkwo
+    title: IT Operations Lead (Okta / endpoints)
+    team: IT Operations
+    manager: P-012
+    status: active
+    start: 2021-09-08
+    email: chris.okonkwo@acmecloud.example
+    notes: Control operator for identity. Overloaded. Prefers Slack to tickets.
+  - id: P-005
+    name: Noah Patel
+    title: Platform Engineering Lead (AWS)
+    team: Engineering
+    manager: P-006
+    status: active
+    start: 2022-03-14
+    email: noah.patel@acmecloud.example
+  - id: P-006
+    name: Luis Mora
+    title: Director of Engineering
+    team: Engineering
+    manager: null
+    status: active
+    start: 2020-11-02
+    email: luis.mora@acmecloud.example
+  - id: P-007
+    name: Maya Chen
+    title: Engineering Manager
+    team: Engineering
+    manager: P-006
+    status: terminated
+    start: 2021-02-01
+    end: 2026-07-31
+    email: maya.chen@acmecloud.example
+    notes: Voluntary departure. Last day 31 Jul 2026.
+  - id: P-008
+    name: Dominic Ruiz
+    title: Senior Backend Engineer
+    team: Engineering
+    manager: P-006
+    status: active
+    start: 2026-08-11
+    email: dominic.ruiz@acmecloud.example
+  - id: P-009
+    name: Samira Adel
+    title: HR Business Partner
+    team: People
+    manager: P-010
+    status: active
+    start: 2022-07-18
+    email: samira.adel@acmecloud.example
+  - id: P-010
+    name: Taylor Brooks
+    title: VP People
+    team: People
+    manager: null
+    status: active
+    start: 2019-05-06
+  - id: P-011
+    name: Riley Cho
+    title: IT Operations Intern
+    team: IT Operations
+    manager: P-004
+    status: active
+    start: 2026-01-13
+    end_planned: 2026-05-01
+    notes: Internship ended May 2026; account still listed as intern in some trackers.
+  - id: P-012
+    name: Morgan Ellis
+    title: VP Operations
+    team: Operations
+    manager: null
+    status: active
+    start: 2018-08-20
+  - id: P-013
+    name: Keiko Watanabe
+    title: TPRM Analyst
+    team: Security & Compliance
+    manager: P-002
+    status: active
+    start: 2025-10-06
+    email: keiko.watanabe@acmecloud.example
+  - id: P-014
+    name: Amir Haddad
+    title: Product Manager, Talent
+    team: Product
+    manager: null
+    status: active
+    start: 2024-09-03
+    email: amir.haddad@acmecloud.example
+  - id: P-015
+    name: Dana Whitfield
+    title: Senior Associate
+    team: External — Riverside Assurance LLP
+    manager: null
+    status: external
+    notes: Lead tester for the Type II. Not an employee.
+  - id: P-016
+    name: Elena Voss
+    title: Privacy Counsel
+    team: Legal
+    manager: null
+    status: active
+    start: 2023-11-27
+    email: elena.voss@acmecloud.example
+  - id: P-017
+    name: Reese Dalton
+    title: Contractor DBA (Nightingale Contracting)
+    team: Engineering
+    manager: P-005
+    status: contractor
+    start: 2026-08-25
+    email: reese.dalton@nightingale.example
+    notes: Production support on-call. Not an employee. Not the DataBridge contact.
+  - id: P-018
+    name: Jules Okorie
+    title: Revenue Operations Manager
+    team: Revenue Operations
+    manager: null
+    status: active
+    start: 2023-02-14
+    email: jules.okorie@acmecloud.example
+  - id: P-019
+    name: Sasha Klein
+    title: Customer Success Director
+    team: Customer Success
+    manager: null
+    status: active
+    start: 2022-06-01
+    email: sasha.klein@acmecloud.example

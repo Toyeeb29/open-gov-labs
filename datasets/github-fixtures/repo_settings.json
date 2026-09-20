@@ -1,0 +1,32 @@
+{
+  "source": "simulated GitHub repo settings export",
+  "exported_at": "2026-09-18",
+  "org": "acme-cloud-example",
+  "repos": [
+    {
+      "name": "app-api",
+      "default_branch": "main",
+      "branch_protection": {
+        "required_reviews": 1,
+        "dismiss_stale": true,
+        "require_ci": true,
+        "enforce_admins": false
+      }
+    },
+    {
+      "name": "infra",
+      "default_branch": "main",
+      "branch_protection": {
+        "required_reviews": 0,
+        "dismiss_stale": false,
+        "require_ci": false,
+        "enforce_admins": false
+      }
+    },
+    {
+      "name": "scripts-hotfixes",
+      "default_branch": "main",
+      "branch_protection": null
+    }
+  ]
+}

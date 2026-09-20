@@ -1,0 +1,21 @@
+id: healthtech
+name: Meridian Health Systems
+industry: healthcare
+employee_count: 1200
+hq_region: us
+stack:
+  - azure
+  - epic_adjacent_integrations
+  - okta
+  - jira
+  - github
+frameworks:
+  - hipaa
+  - soc2
+  - nist-csf
+sensitive_data:
+  - ephi_synthetic
+  - employee_pii
+notes: >
+  Fictional health technology and clinic operations company.
+  All health records in this tree are synthetic.

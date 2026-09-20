@@ -1,0 +1,60 @@
+id: GRC-AUD-001
+title: Control testing — production change management (CTL-CHG-01)
+domain: grc
+category: audit
+roles:
+  - GRC Analyst
+  - Internal Auditor
+  - Security Compliance Analyst
+seniority:
+  - junior
+  - mid
+company: acme-cloud
+requestor: Priya Shah, Manager, Security & Compliance
+priority: medium
+due: 25 September 2026
+simulation_date: 21 September 2026
+frameworks:
+  - id: soc2
+    control_ids: [CC8.1]
+    notes: Change management theme. Cite catalog. Do not paste TSC text.
+  - id: iso27001
+    control_ids: [A.8.32]
+  - id: nist-csf
+    control_ids: [PR.IP-01]
+tasks:
+  - read the internal test plan and policy
+  - inspect the uploaded sample and related tickets
+  - look for deploys and logging gaps outside the export
+  - document population, sample, exceptions, and conclusion
+  - request missing evidence from named owners
+inputs:
+  - companies/acme-cloud/tickets/IA-033-change-test.md
+  - companies/acme-cloud/audits/change-test-plan.md
+  - companies/acme-cloud/policies/POL-CHG-001-change-management.md
+  - companies/acme-cloud/controls/CTL-CHG-01.yml
+  - companies/acme-cloud/evidence/EVD-2026-09-deploy-sample.md
+  - companies/acme-cloud/evidence/EVD-2026-09-cloudtrail-gap.md
+  - companies/acme-cloud/tickets/CHG-880-hotfix-no-review.md
+  - companies/acme-cloud/tickets/CHG-881-cloudtrail-disable.md
+outputs:
+  - workpapers/01-test-workpaper.md
+  - workpapers/02-exceptions.md
+  - workpapers/03-test-conclusion.md
+competencies:
+  - control testing
+  - evidence analysis
+  - audit support
+  - professional documentation
+estimated_time_minutes: 90
+difficulty: intermediate
+human_gates:
+  - operating-effectiveness conclusion is made by the user
+constraints:
+  - do not mark CHG-881 as accepted
+  - do not invent a complete population or after-the-fact reviews
+  - inquiry alone is not a complete test
+  - cite file paths
+rubric: scoring/GRC-AUD-001-rubric.yml
+portfolio: true
+portfolio_label: Simulated Enterprise Project

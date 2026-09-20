@@ -1,0 +1,27 @@
+# Example mapping. Source text was not copied into this repository.
+id: JI-GRC-001
+role: GRC Analyst
+retrieved: 2026-09-20
+source_url: null
+source_notes: Generalized from common public GRC analyst postings. No posting text stored.
+responsibilities:
+  - Support SOC 2 audits and collect evidence from control owners
+  - Maintain the risk register
+  - Review vendor security questionnaires
+skills:
+  - evidence management
+  - control testing
+  - stakeholder communication
+frameworks:
+  - soc2
+  - iso27001
+labs:
+  - GRC-COMP-001
+  - TPRM-VEND-001
+  - AIGOV-INT-001
+competencies:
+  - audit support
+  - evidence analysis
+  - control assessment
+  - vendor risk
+  - AI intake

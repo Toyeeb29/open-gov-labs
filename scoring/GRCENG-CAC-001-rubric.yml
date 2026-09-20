@@ -1,0 +1,22 @@
+id: GRCENG-CAC-001-rubric
+lab: GRCENG-CAC-001
+scale: [competent, developing, needs_work, not_applicable]
+criteria:
+  - id: completeness
+    prompt: Workpaper filled.
+  - id: evidence_usage
+    prompt: Names acme-scratch-qbr from the fixture.
+  - id: risk_identification
+    prompt: Public + unencrypted called out.
+  - id: control_mapping
+    prompt: Ties to the QBR / RSK-024 problem.
+  - id: consistency
+    prompt: Fail is treated as success for the gate.
+  - id: professional_quality
+    prompt: Clear enough for a CI README.
+  - id: escalation_judgment
+    prompt: Does not apply to live AWS as the lab.
+  - id: human_gate
+    prompt: Green policy ≠ accepted residual risk.
+fail_if:
+  - treats_green_policy_as_rsk024_accepted

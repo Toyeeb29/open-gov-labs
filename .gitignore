@@ -1,0 +1,39 @@
+# Local / OS
+.DS_Store
+Thumbs.db
+*.log
+.local/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Node / Next.js (when the workplace app exists)
+node_modules/
+dist/
+build/
+.next/
+out/
+coverage/
+
+# Local progress / databases
+*.sqlite
+*.db
+automation/evidence_collect/output/
+
+# IDE
+.idea/
+.vscode/
+*.swp

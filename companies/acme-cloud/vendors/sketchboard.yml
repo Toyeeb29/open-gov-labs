@@ -1,0 +1,11 @@
+id: VND-003
+name: Sketchboard Whiteboard
+status: unused_but_connected
+owner_last: Maya Chen
+data: design sketches; some customer journey maps
+okta_app: Sketchboard SSO
+last_login_known: 2025-10-12
+offboard_ticket: none
+notes: >
+  Engineering stopped using it after Maya left. App assignment still in Okta
+  for the "everyone" group per Chris's memory. No contract end letter.

@@ -1,0 +1,24 @@
+id: AIGOV-RSK-001-rubric
+lab: AIGOV-RSK-001
+scale: [competent, developing, needs_work, not_applicable]
+criteria:
+  - id: completeness
+    prompt: Assessment filled.
+  - id: evidence_usage
+    prompt: Uses intake, privacy note, and trial log.
+  - id: risk_identification
+    prompt: Automated reject, EU candidates, mail already sent.
+  - id: control_mapping
+    prompt: Draft AI policy / no DPIA / vendor gap.
+  - id: consistency
+    prompt: Residual matches live trial behavior.
+  - id: professional_quality
+    prompt: Defensible to a committee.
+  - id: escalation_judgment
+    prompt: Not "pre-prod only" if mail went out.
+  - id: human_gate
+    prompt: User owns the rating. No go-live.
+fail_if:
+  - rates_low
+  - uses_llm_as_official_score
+  - approves_golive

@@ -1,0 +1,25 @@
+# Proposed evidence-request workflow (not connected to a live n8n).
+# A person must approve before a control is marked complete.
+
+id: wf-evidence-request
+trigger: pbc_item_opened
+steps:
+  - id: collect
+    type: automation
+    does: pull named exports from fixtures or APIs
+  - id: validate
+    type: automation
+    does: check period, owner, hash
+  - id: human_review
+    type: human_gate
+    role: GRC Analyst
+    does: accept, reject, or request more
+    cannot: mark_operating_effective_alone
+  - id: manager_send
+    type: human_gate
+    role: Manager, Security & Compliance
+    does: send pack to auditor
+    cannot: be_replaced_by_llm
+forbidden:
+  - auto_close_pbc_on_green_collector
+  - llm_sets_operating_effectiveness

@@ -1,0 +1,40 @@
+id: GRCENG-WF-001
+title: Evidence-request workflow with human gates
+domain: grc-engineering
+category: workflow-automation
+roles:
+  - GRC Engineer
+  - GRC Analyst
+seniority:
+  - junior
+  - mid
+company: acme-cloud
+requestor: Priya Shah
+priority: low
+due: 2 October 2026
+simulation_date: 21 September 2026
+frameworks:
+  - id: soc2
+    control_ids: [CC2.1, CC6.1]
+tasks:
+  - review the stub workflow
+  - say what is safe to automate
+  - keep auditor send and effectiveness as human steps
+inputs:
+  - companies/acme-cloud/tickets/ENG-GRC-044-evidence-workflow.md
+  - automation/workflows/evidence-request.workflow.yml
+  - companies/acme-cloud/tickets/AUD-011-pbc-cc6.1.md
+outputs:
+  - workpapers/01-workflow-design.md
+competencies:
+  - workflow automation
+  - human-in-the-loop
+estimated_time_minutes: 40
+difficulty: intro
+human_gates:
+  - LLM cannot close a PBC or set effectiveness
+constraints:
+  - do not connect a live n8n to production
+rubric: scoring/GRCENG-WF-001-rubric.yml
+portfolio: true
+portfolio_label: Simulated Enterprise Project

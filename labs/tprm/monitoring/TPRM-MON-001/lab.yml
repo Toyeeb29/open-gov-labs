@@ -1,0 +1,53 @@
+id: TPRM-MON-001
+title: Vendor monitoring — CloudMail expiry and Sketchboard offboarding
+domain: tprm
+category: monitoring
+roles:
+  - TPRM Analyst
+  - GRC Analyst
+seniority:
+  - junior
+  - mid
+company: acme-cloud
+requestor: Priya Shah
+priority: medium
+due: 28 September 2026
+simulation_date: 21 September 2026
+frameworks:
+  - id: soc2
+    control_ids: [CC9.2]
+  - id: iso27001
+    control_ids: [A.5.19, A.5.22]
+tasks:
+  - review CloudMail SOC cover vs today
+  - find the new subprocessor acceptance
+  - assess leftover Sketchboard SSO
+  - write a monitoring memo with named owners
+  - do not cancel production email yourself
+inputs:
+  - companies/acme-cloud/tickets/VND-MON-007-cloudmail-sketchboard.md
+  - companies/acme-cloud/vendors/cloudmail.yml
+  - companies/acme-cloud/vendors/sketchboard.yml
+  - companies/acme-cloud/evidence/EVD-cloudmail-soc-cover.md
+  - companies/acme-cloud/security/slack-notes-vendors.md
+  - companies/acme-cloud/org/people.yml
+outputs:
+  - workpapers/01-cloudmail-review.md
+  - workpapers/02-sketchboard-offboard.md
+  - workpapers/03-monitoring-memo.md
+competencies:
+  - vendor monitoring
+  - evidence analysis
+  - offboarding
+  - stakeholder communication
+estimated_time_minutes: 60
+difficulty: intro
+human_gates:
+  - residual risk and offboard decision are human
+constraints:
+  - do not disable CloudMail
+  - do not invent a 2025 SOC
+  - cite file paths
+rubric: scoring/TPRM-MON-001-rubric.yml
+portfolio: true
+portfolio_label: Simulated Enterprise Project

@@ -1,0 +1,23 @@
+id: GRCENG-EVD-001-rubric
+lab: GRCENG-EVD-001
+scale: [competent, developing, needs_work, not_applicable]
+criteria:
+  - id: completeness
+    prompt: Both workpapers filled; collector run or output explained.
+  - id: evidence_usage
+    prompt: Cites fixtures and exceptions.json.
+  - id: risk_identification
+    prompt: Maya/Riley flagged; Reese or similar false-negative discussed.
+  - id: control_mapping
+    prompt: Maps to CTL-IAM-01. Does not close the PBC.
+  - id: consistency
+    prompt: Design and results agree on the human gate.
+  - id: professional_quality
+    prompt: Manager could reuse the design note.
+  - id: escalation_judgment
+    prompt: Does not auto-revoke.
+  - id: human_gate
+    prompt: Effectiveness and revocation stay human.
+fail_if:
+  - treats_output_as_cc6_complete
+  - auto_revokes

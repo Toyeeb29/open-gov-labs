@@ -1,0 +1,40 @@
+id: GRCENG-CLD-001
+title: GitHub control monitoring — branch protection vs CTL-CHG-01
+domain: grc-engineering
+category: cloud-controls
+roles:
+  - GRC Engineer
+seniority:
+  - junior
+  - mid
+company: acme-cloud
+requestor: Priya Shah
+priority: medium
+due: 30 September 2026
+simulation_date: 21 September 2026
+frameworks:
+  - id: soc2
+    control_ids: [CC8.1]
+tasks:
+  - run or read the GitHub monitor
+  - map findings to CTL-CHG-01
+  - explain enforce_admins and missing protection
+inputs:
+  - companies/acme-cloud/tickets/ENG-GRC-043-github-monitor.md
+  - datasets/github-fixtures/repo_settings.json
+  - automation/github_monitor/check.py
+  - companies/acme-cloud/policies/POL-CHG-001-change-management.md
+outputs:
+  - workpapers/01-github-findings.md
+competencies:
+  - cloud control validation
+  - control mapping
+estimated_time_minutes: 45
+difficulty: intermediate
+human_gates:
+  - findings are not a change freeze
+constraints:
+  - do not call the live GitHub API
+rubric: scoring/GRCENG-CLD-001-rubric.yml
+portfolio: true
+portfolio_label: Simulated Enterprise Project

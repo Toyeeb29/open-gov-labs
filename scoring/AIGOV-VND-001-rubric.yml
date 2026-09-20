@@ -1,0 +1,23 @@
+id: AIGOV-VND-001-rubric
+lab: AIGOV-VND-001
+scale: [competent, developing, needs_work, not_applicable]
+criteria:
+  - id: completeness
+    prompt: Table filled for both parties.
+  - id: evidence_usage
+    prompt: Uses lumen-models.yml and intake.
+  - id: risk_identification
+    prompt: No Lumen contract; train-on-data; region FAQ.
+  - id: control_mapping
+    prompt: Vendor / processor theme without invented legal text.
+  - id: consistency
+    prompt: Hold matches residual.
+  - id: professional_quality
+    prompt: Sendable to Elena / Keiko.
+  - id: escalation_judgment
+    prompt: Does not approve Lumen by silence.
+  - id: human_gate
+    prompt: No invented add-on.
+fail_if:
+  - invents_lumen_contract
+  - approves_vendor

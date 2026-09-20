@@ -1,0 +1,62 @@
+id: GRC-RISK-001
+title: Risk assessment — unsanctioned production copy (RSK-024)
+domain: grc
+category: risk-management
+roles:
+  - GRC Analyst
+  - IT Risk Analyst
+seniority:
+  - junior
+  - mid
+company: acme-cloud
+requestor: Priya Shah, Manager, Security & Compliance
+priority: high
+due: 23 September 2026
+simulation_date: 21 September 2026
+frameworks:
+  - id: soc2
+    control_ids: [CC3.2, CC6.1]
+    notes: Risk assessment and logical access themes. Cite catalog. Do not paste TSC text.
+  - id: iso27001
+    control_ids: [A.5.7, A.8.11]
+  - id: nist-csf
+    control_ids: [ID.RA-01, ID.RA-05]
+  - id: gdpr
+    control_ids: []
+    notes: Customer content may include EU personal data. Do not invent article text; cite frameworks/catalog.yml.
+tasks:
+  - read the intake and browse beyond Jules's form
+  - rate inherent and residual risk using the published methodology
+  - update the register entry (do not leave not_set)
+  - recommend treatment a CISO can accept or reject
+  - revisit RSK-014 residual if the files change your view
+  - escalate live data-at-rest outside the organization
+inputs:
+  - companies/acme-cloud/tickets/RSK-024-prod-clone.md
+  - companies/acme-cloud/risks/
+  - companies/acme-cloud/security/slack-notes-revops.md
+  - companies/acme-cloud/evidence/EVD-2026-09-scratch-aws.md
+  - companies/acme-cloud/policies/POL-ACCESS-001-access-control.md
+  - companies/acme-cloud/org/
+outputs:
+  - workpapers/01-risk-assessment.md
+  - workpapers/02-register-entry.md
+  - workpapers/03-treatment-and-escalation.md
+competencies:
+  - risk assessment
+  - evidence analysis
+  - stakeholder communication
+  - escalation judgment
+estimated_time_minutes: 75
+difficulty: intermediate
+human_gates:
+  - risk ratings are made by the user
+  - High or Critical acceptance is Alex Kim, not GRC and not AI
+constraints:
+  - do not approve the scratch-account copy
+  - do not invent a DPA or encryption on that bucket
+  - cite file paths
+  - do not treat Jules's "metadata only" label as fact
+rubric: scoring/GRC-RISK-001-rubric.yml
+portfolio: true
+portfolio_label: Simulated Enterprise Project

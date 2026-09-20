@@ -1,0 +1,62 @@
+id: GRC-COMP-001
+title: SOC 2 evidence collection — CC6.1
+domain: grc
+category: compliance
+roles:
+  - GRC Analyst
+  - Security Compliance Analyst
+seniority:
+  - junior
+  - mid
+company: acme-cloud
+requestor: Priya Shah, Manager, Security & Compliance
+priority: high
+due: 27 September 2026
+simulation_date: 21 September 2026
+frameworks:
+  - id: soc2
+    control_ids: [CC6.1]
+    source: frameworks/catalog.yml
+  - id: iso27001
+    control_ids: [A.5.15, A.8.2]
+  - id: nist-csf
+    control_ids: [PR.AA-01, PR.AA-05]
+tasks:
+  - read the manager assignment and the auditor PBC
+  - browse company policies, control record, evidence, tickets, and security notes
+  - decide whether CTL-IAM-01 is operating effectively for the Type II period
+  - identify evidence gaps and live access issues
+  - request missing evidence from named owners
+  - escalate anything that should not wait for the workpaper
+  - complete the workpapers in workpapers/
+inputs:
+  - companies/acme-cloud/audits/pbc-list.md
+  - companies/acme-cloud/policies/POL-ACCESS-001-access-control.md
+  - companies/acme-cloud/controls/CTL-IAM-01.yml
+  - companies/acme-cloud/evidence/
+  - companies/acme-cloud/tickets/
+  - companies/acme-cloud/security/
+outputs:
+  - workpapers/01-control-assessment.md
+  - workpapers/02-evidence-request.md
+  - workpapers/03-audit-summary.md
+  - workpapers/04-escalation.md
+competencies:
+  - evidence analysis
+  - control assessment
+  - stakeholder communication
+  - audit support
+  - escalation judgment
+estimated_time_minutes: 90
+difficulty: intermediate
+human_gates:
+  - operating-effectiveness conclusion is made by the user
+  - live access removal is requested by a person, not marked approved by AI
+constraints:
+  - do not invent evidence that is not in companies/acme-cloud
+  - do not send the auditor a pack you have not reviewed
+  - do not grant or expand production access
+  - cite file paths for evidence you rely on
+rubric: scoring/GRC-COMP-001-rubric.yml
+portfolio: true
+portfolio_label: Simulated Enterprise Project

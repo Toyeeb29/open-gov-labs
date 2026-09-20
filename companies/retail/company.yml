@@ -1,0 +1,22 @@
+id: retail
+name: Harbor & Oak Retail
+industry: retail
+employee_count: 8000
+hq_region: global
+stack:
+  - gcp
+  - shopify_adjacent
+  - okta
+  - jira
+  - github
+frameworks:
+  - pci-dss
+  - soc2
+  - gdpr
+sensitive_data:
+  - customer_pii
+  - payment_metadata
+  - workforce_pii
+notes: >
+  Fictional omnichannel retailer. Useful for store access, seasonal workforce,
+  and a large vendor ecosystem.

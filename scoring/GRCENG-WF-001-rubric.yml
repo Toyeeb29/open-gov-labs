@@ -1,0 +1,23 @@
+id: GRCENG-WF-001-rubric
+lab: GRCENG-WF-001
+scale: [competent, developing, needs_work, not_applicable]
+criteria:
+  - id: completeness
+    prompt: Workpaper filled.
+  - id: evidence_usage
+    prompt: Refers to the YAML stub and AUD-011 problem.
+  - id: risk_identification
+    prompt: Auto-close and LLM effectiveness called out as forbidden.
+  - id: control_mapping
+    prompt: Tied to PBC / CC6.1 evidence quality.
+  - id: consistency
+    prompt: Steps match the gates.
+  - id: professional_quality
+    prompt: Could be an n8n backlog ticket.
+  - id: escalation_judgment
+    prompt: Manager still sends to the auditor.
+  - id: human_gate
+    prompt: Two human stops remain.
+fail_if:
+  - auto_closes_pbc
+  - llm_sets_effectiveness
