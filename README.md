@@ -4,6 +4,8 @@ Working name. The product name can change later without renaming every lab.
 
 **Practice the work before you get the job.**
 
+**Use it here: [https://toyeeb29.github.io/open-gov-labs/](https://toyeeb29.github.io/open-gov-labs/)**
+
 An open-source workplace simulator for GRC, security compliance, IT risk, TPRM, internal audit, GRC engineering, and AI governance.
 
 This is not a certification course. Users receive realistic assignments, inspect a simulated company, make assessments, produce professional artifacts, and get structured feedback.
@@ -14,9 +16,19 @@ JOB → RESPONSIBILITY → TASK → ENVIRONMENT → EVIDENCE → DECISION → AR
 
 ## Current status
 
-The folder layout is in place. **Sixteen practice labs** run inside Acme Cloud (GRC first, then TPRM, GRC engineering, AI governance). There is still no website — you complete labs by reading company files and filling workpapers.
+Sixteen practice labs run inside Acme Cloud. The hosted desk is a static GitHub Pages site — no login, workpapers stay in your browser.
 
-Start here: [docs/how-to-practice.md](docs/how-to-practice.md). Work queue: [companies/acme-cloud/tickets/work-queue.md](companies/acme-cloud/tickets/work-queue.md).
+Open [https://toyeeb29.github.io/open-gov-labs/](https://toyeeb29.github.io/open-gov-labs/), clock in, then work the queue. GRC tickets first.
+
+To run the same desk locally from `workplace/`:
+
+```bash
+cd workplace
+npm install
+npm run dev
+```
+
+Then open http://localhost:3456. You can still complete labs in the repo: [docs/how-to-practice.md](docs/how-to-practice.md).
 
 If you are returning to this repo with Cursor: this file, then [docs/README.md](docs/README.md).
 

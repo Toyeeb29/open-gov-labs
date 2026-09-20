@@ -1,15 +1,17 @@
-# How to practice (no application yet)
+# How to practice
 
-There is no website. The workplace is the repository.
+The desk is public: **[https://toyeeb29.github.io/open-gov-labs/](https://toyeeb29.github.io/open-gov-labs/)**. Clock in, open the work queue, and write in the browser. Workpapers save in local storage on that machine.
+
+You can still complete labs in the repository if you prefer files over the desk.
 
 ## Order
 
 Complete **all GRC labs first**, then TPRM, then GRC engineering, then AI governance. That matches the folder tree and a realistic Monday queue.
 
-1. Open [companies/acme-cloud/tickets/work-queue.md](../companies/acme-cloud/tickets/work-queue.md).
-2. Open the lab `README.md` and `brief.md`.
+1. Open the [hosted work queue](https://toyeeb29.github.io/open-gov-labs/desk/) or [companies/acme-cloud/tickets/work-queue.md](../companies/acme-cloud/tickets/work-queue.md).
+2. Open the lab `README.md` and `brief.md` (or the Manager brief tab on the desk).
 3. Browse `companies/acme-cloud/` (and `datasets/` / `automation/` for engineering labs).
-4. Fill `workpapers/`.
+4. Fill `workpapers/` or the Write tab.
 5. Compare to `expected-outputs.md` **after** you write.
 6. Score with the file in `scoring/`.
 

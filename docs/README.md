@@ -3,7 +3,7 @@
 Read in this order if you are learning the repo:
 
 1. [../README.md](../README.md) — what this project is
-2. [how-to-practice.md](how-to-practice.md) — complete a lab without an app
+2. [how-to-practice.md](how-to-practice.md) — use the hosted desk or complete a lab in the repo
 3. [architecture.md](architecture.md) — how the pieces fit
 4. [lab-schema.md](lab-schema.md) — how to define a lab
 5. [company-schema.md](company-schema.md) — how to define a company

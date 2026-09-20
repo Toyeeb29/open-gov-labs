@@ -20,13 +20,17 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 
-# Node / Next.js (when the workplace app exists)
+# Node / Next.js
 node_modules/
 dist/
 build/
 .next/
 out/
 coverage/
+workplace/node_modules/
+workplace/.next/
+workplace/out/
+workplace/public/content/
 
 # Local progress / databases
 *.sqlite
